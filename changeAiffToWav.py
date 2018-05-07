@@ -13,7 +13,7 @@ for letter in notes:
 	#	" "+  )
 	for i in range(0,9):
 		os.system("ffmpeg -i " + HEADER + letter + str(i) + EXTENSION +
-                " "+  letter + str(i) + DESIRED_EXTENSION)	
+                " "+  letter.lower() + str(i) + DESIRED_EXTENSION)	
 
 		
 	#os.system("ffmpeg -i " + HEADER +   +EXTENSION
